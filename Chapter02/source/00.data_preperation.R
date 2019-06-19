@@ -1,5 +1,5 @@
 # 2장
-setwd("D:/Workspace-JWP/R_Data_Analysis/R-Statistics")
+setwd("D:/Workspace-JWP/R_Data_Analysis/R-Statistics/Chapter02")
 
 data <- read.csv("data/2010년 인구사항.csv", header=F, na.strings=c("."))
 str(data)
