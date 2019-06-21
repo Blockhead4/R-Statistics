@@ -143,9 +143,15 @@ text(2, 0.0055, "2", col="blue")
 points(3, -0.005, pch=17, col="blue")
 text(3, 0.0055, "3", col="blue")
 
-s <- seq(-7, 10, by=0.001)
+s <- seq(2, 3, by=0.001)
 s.z <- dnorm(s, mean=1.5, sd=2)
 s <- c(2, s, 3)
+s.z <- c(0, s.z, 0)
+polygon(s, s.z, col="red", density=10, angle=305)
+
+s <- seq(0, 1, by=0.001)
+s.z <- dnorm(s, mean=1.5, sd=2)
+s <- c(0, s, 1)
 s.z <- c(0, s.z, 0)
 polygon(s, s.z, col="red", density=10, angle=305)
 
