@@ -89,6 +89,7 @@ pnorm(1.96, mu, sigma) - pnorm(-1.96, mu, sigma)
 pnorm(2.58, mu, sigma) - pnorm(-2.58, mu, sigma)
 
 # p.143 그림 3-17
+par(mfrow=c(1,1))
 z <- seq(-3, 3, by=0.001)
 z.p <- dnorm(z)
 plot(z, z.p, axes=F, type="l", main="표준정규분포 (95%)", ylab="", ylim=c(-0.04, 0.4))
