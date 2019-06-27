@@ -12,7 +12,7 @@
 <meta name="author" content="JWP" />
 
 
-<title>Assignment10</title>
+<title>Assignment11</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -374,145 +374,482 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Assignment10</h1>
+<h1 class="title toc-ignore">Assignment11</h1>
 <h4 class="author">JWP</h4>
-<h4 class="date">2019 6 25</h4>
+<h4 class="date">2019 6 26</h4>
 
 </div>
 
 
-<div id="chapter-06.-practice" class="section level2">
-<h2>Chapter 06. Practice</h2>
-<p><br><br></p>
-<pre class="r"><code>options(digits=4)</code></pre>
-<p><br><br></p>
-<div id="section" class="section level3">
-<h3>모비율 추정</h3>
-<p><br><br></p>
-<div id="n------50------.--------------p---95---." class="section level4">
-<h4>1. 어느 대학교에서 대중교통을 이용하여 등교하는 학생의 비율을 알아보기 위하여 이 학교 학생 중 n 명을 임의 추출하여 조사한 결과 50%의 학생이 대중교통을 이용하여 등교하는 것으로 나타났다. 이 결과를 이용하여 이 대학교 전체 학생 중에서 대중교통을 이용하여 등교하는 학생의 비율 p에 대한 신뢰도 95%의 신뢰 구간을 구하시오.</h4>
-<p><br></p>
-</div>
-<div id="phat---0.5n" class="section level4">
-<h4>phat &lt;- 0.5n</h4>
-<p><br></p>
-<pre class="r"><code>print(&quot;95% 신뢰구간 : phat - 1.96 * sqrt(phat*(1-phat)/n) &lt;= p &lt;= phat + 1.96 * sqrt(phat*(1-phat)/n)&quot;)</code></pre>
-<pre><code>## [1] &quot;95% 신뢰구간 : phat - 1.96 * sqrt(phat*(1-phat)/n) &lt;= p &lt;= phat + 1.96 * sqrt(phat*(1-phat)/n)&quot;</code></pre>
-<p><br><br></p>
-</div>
-<div id="p----p---95--." class="section level4">
-<h4>2. 어느 음식점에서 새로운 메뉴를 개발하여 이 메뉴에 대한 선호도를 조사하기로 하였다. 고객 100명을 임의추출하여 이 메뉴에 대한 반응을 조사하였더니 이들 중 4/5가 선호한다고 하였다. 전체 고객의 새로운 메뉴에 대한 선호도를 p라 할 때, 모비율 p에 대한 신뢰도 95%의 신뢰구간을 구하시오.</h4>
-<p><br></p>
-<pre class="r"><code>n &lt;- 100
-phat &lt;- 4/5
-
-ll &lt;- phat - 1.96 * sqrt(phat*(1-phat)/n)
-ul &lt;- phat + 1.96 * sqrt(phat*(1-phat)/n)
-print(paste(&quot;95% 신뢰구간 : (&quot;, format(ll, digits=4), &quot;,&quot;, format(ul, digits=4), &quot;)&quot;))</code></pre>
-<pre><code>## [1] &quot;95% 신뢰구간 : ( 0.7216 , 0.8784 )&quot;</code></pre>
-<p><br><br></p>
-</div>
-<div id="section-1" class="section level4">
-<h4>3. 우리나라 성인 남성의 흡연율을 조사한다고 한다. 이에 성인 남자 1,000명을 무작위로 뽑아 흡연 여부를 조사하였더니, 430명이 흡연을 하고 있었다. 이때 흡연율(모비율)에 대한 90% 신뢰구간을 추정하시오.</h4>
-<p><br></p>
-<pre class="r"><code>n &lt;- 1000
-phat &lt;- 430/1000
-
-ll &lt;- phat - 1.64 * sqrt(phat*(1-phat)/n)
-ul &lt;- phat + 1.64 * sqrt(phat*(1-phat)/n)
-print(paste(&quot;90% 신뢰구간 : (&quot;, format(ll, digits=4), &quot;,&quot;, format(ul, digits=4), &quot;)&quot;))</code></pre>
-<pre><code>## [1] &quot;90% 신뢰구간 : ( 0.4043 , 0.4557 )&quot;</code></pre>
-<p><br><br></p>
-</div>
-</div>
+<div id="chapter-07.-practice" class="section level2">
+<h2>Chapter 07. Practice</h2>
+<p><br><br><br></p>
 <div id="sample-t-test" class="section level3">
-<h3>1-Sample T test</h3>
-<div id="a---1000-----10-----." class="section level4">
-<h4>1. A회사의 건전지의 수명시간이 1000시간 일 때, 무작위로 뽑은 10개의 건전지에 대한 수명은 다음과 같다.<br />
-</h4>
+<h3>2-Sample T test</h3>
+<p><br><br></p>
+<div id="mtcars----am---mpg----t-test---." class="section level4">
+<h4>1. mtcars 데이터셋에서 자동차 기어 종류(am: 오토/수동)에 따른 mpg의 차이가 통계적으로 유의한지 t-test를 통해 확인해 보시오.</h4>
+<p><br></p>
+<pre class="r"><code>head(mtcars)</code></pre>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+<pre class="r"><code>str(mtcars)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    32 obs. of  11 variables:
+##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+##  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+##  $ disp: num  160 160 108 258 360 ...
+##  $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+##  $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+##  $ qsec: num  16.5 17 18.6 19.4 17 ...
+##  $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+##  $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...</code></pre>
+<pre class="r"><code>auto &lt;- subset(mtcars$mpg, mtcars$am==1); length(auto); mean(auto)</code></pre>
+<pre><code>## [1] 13</code></pre>
+<pre><code>## [1] 24.39231</code></pre>
+<pre class="r"><code>manu &lt;- subset(mtcars$mpg, mtcars$am==0); length(manu); mean(manu)</code></pre>
+<pre><code>## [1] 19</code></pre>
+<pre><code>## [1] 17.14737</code></pre>
+<pre class="r"><code>sd(auto)</code></pre>
+<pre><code>## [1] 6.166504</code></pre>
+<pre class="r"><code>sd(manu)</code></pre>
+<pre><code>## [1] 3.833966</code></pre>
+<pre class="r"><code>t.test(mtcars$mpg ~ mtcars$am, mu=0, var.equal=T)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  mtcars$mpg by mtcars$am
+## t = -4.1061, df = 30, p-value = 0.000285
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -10.84837  -3.64151
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        17.14737        24.39231</code></pre>
+<pre class="r"><code>print(paste(&quot;mtcars 데이터셋에서 자동차 기어 종류(am: 오토/수동)에 따른 mpg의 차이가 있는지&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 오토 13개, 수동 19개를 측정한 결과, 오토의 mpg는&quot;
+            , format(mean(auto), digits=4), &quot;+-&quot;, format(sd(auto), digits=4), &quot;수동의 mpg는&quot;, 
+            format(mean(manu), digits=4), &quot;+-&quot;, format(sd(manu), digits=4), &quot;으로 나타났습니다.&quot;,
+            &quot;이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 -4.106(p-value=0.0003)으로 나타나&quot;,
+            &quot;기어 종류(am: 오토/수동)에 따른 mpg의 차이가 있다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;mtcars 데이터셋에서 자동차 기어 종류(am: 오토/수동)에 따른 mpg의 차이가 있는지 알아보기 위해 표본 추출을 통해 오토 13개, 수동 19개를 측정한 결과, 오토의 mpg는 24.39 +- 6.167 수동의 mpg는 17.15 +- 3.834 으로 나타났습니다. 이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 -4.106(p-value=0.0003)으로 나타나 기어 종류(am: 오토/수동)에 따른 mpg의 차이가 있다고 판단됩니다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+<div id="mass---cars93---origin-usa-vs.-non-usa-2-group----price----." class="section level4">
+<h4>2. MASS 패키지에 내장된 Cars93 데이터프레임에 대해서 생산국(Origin)이 USA vs. non-USA 2개의 group 에 대해서 차 가격(Price)의 평균이 차이가 있는지를 검정해보시오.</h4>
+<p><br></p>
+<pre class="r"><code>library(MASS)
+head(Cars93)</code></pre>
+<pre><code>##   Manufacturer   Model    Type Min.Price Price Max.Price MPG.city
+## 1        Acura Integra   Small      12.9  15.9      18.8       25
+## 2        Acura  Legend Midsize      29.2  33.9      38.7       18
+## 3         Audi      90 Compact      25.9  29.1      32.3       20
+## 4         Audi     100 Midsize      30.8  37.7      44.6       19
+## 5          BMW    535i Midsize      23.7  30.0      36.2       22
+## 6        Buick Century Midsize      14.2  15.7      17.3       22
+##   MPG.highway            AirBags DriveTrain Cylinders EngineSize
+## 1          31               None      Front         4        1.8
+## 2          25 Driver &amp; Passenger      Front         6        3.2
+## 3          26        Driver only      Front         6        2.8
+## 4          26 Driver &amp; Passenger      Front         6        2.8
+## 5          30        Driver only       Rear         4        3.5
+## 6          31        Driver only      Front         4        2.2
+##   Horsepower  RPM Rev.per.mile Man.trans.avail Fuel.tank.capacity
+## 1        140 6300         2890             Yes               13.2
+## 2        200 5500         2335             Yes               18.0
+## 3        172 5500         2280             Yes               16.9
+## 4        172 5500         2535             Yes               21.1
+## 5        208 5700         2545             Yes               21.1
+## 6        110 5200         2565              No               16.4
+##   Passengers Length Wheelbase Width Turn.circle Rear.seat.room
+## 1          5    177       102    68          37           26.5
+## 2          5    195       115    71          38           30.0
+## 3          5    180       102    67          37           28.0
+## 4          6    193       106    70          37           31.0
+## 5          4    186       109    69          39           27.0
+## 6          6    189       105    69          41           28.0
+##   Luggage.room Weight  Origin          Make
+## 1           11   2705 non-USA Acura Integra
+## 2           15   3560 non-USA  Acura Legend
+## 3           14   3375 non-USA       Audi 90
+## 4           17   3405 non-USA      Audi 100
+## 5           13   3640 non-USA      BMW 535i
+## 6           16   2880     USA Buick Century</code></pre>
+<pre class="r"><code>str(Cars93)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    93 obs. of  27 variables:
+##  $ Manufacturer      : Factor w/ 32 levels &quot;Acura&quot;,&quot;Audi&quot;,..: 1 1 2 2 3 4 4 4 4 5 ...
+##  $ Model             : Factor w/ 93 levels &quot;100&quot;,&quot;190E&quot;,&quot;240&quot;,..: 49 56 9 1 6 24 54 74 73 35 ...
+##  $ Type              : Factor w/ 6 levels &quot;Compact&quot;,&quot;Large&quot;,..: 4 3 1 3 3 3 2 2 3 2 ...
+##  $ Min.Price         : num  12.9 29.2 25.9 30.8 23.7 14.2 19.9 22.6 26.3 33 ...
+##  $ Price             : num  15.9 33.9 29.1 37.7 30 15.7 20.8 23.7 26.3 34.7 ...
+##  $ Max.Price         : num  18.8 38.7 32.3 44.6 36.2 17.3 21.7 24.9 26.3 36.3 ...
+##  $ MPG.city          : int  25 18 20 19 22 22 19 16 19 16 ...
+##  $ MPG.highway       : int  31 25 26 26 30 31 28 25 27 25 ...
+##  $ AirBags           : Factor w/ 3 levels &quot;Driver &amp; Passenger&quot;,..: 3 1 2 1 2 2 2 2 2 2 ...
+##  $ DriveTrain        : Factor w/ 3 levels &quot;4WD&quot;,&quot;Front&quot;,..: 2 2 2 2 3 2 2 3 2 2 ...
+##  $ Cylinders         : Factor w/ 6 levels &quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,..: 2 4 4 4 2 2 4 4 4 5 ...
+##  $ EngineSize        : num  1.8 3.2 2.8 2.8 3.5 2.2 3.8 5.7 3.8 4.9 ...
+##  $ Horsepower        : int  140 200 172 172 208 110 170 180 170 200 ...
+##  $ RPM               : int  6300 5500 5500 5500 5700 5200 4800 4000 4800 4100 ...
+##  $ Rev.per.mile      : int  2890 2335 2280 2535 2545 2565 1570 1320 1690 1510 ...
+##  $ Man.trans.avail   : Factor w/ 2 levels &quot;No&quot;,&quot;Yes&quot;: 2 2 2 2 2 1 1 1 1 1 ...
+##  $ Fuel.tank.capacity: num  13.2 18 16.9 21.1 21.1 16.4 18 23 18.8 18 ...
+##  $ Passengers        : int  5 5 5 6 4 6 6 6 5 6 ...
+##  $ Length            : int  177 195 180 193 186 189 200 216 198 206 ...
+##  $ Wheelbase         : int  102 115 102 106 109 105 111 116 108 114 ...
+##  $ Width             : int  68 71 67 70 69 69 74 78 73 73 ...
+##  $ Turn.circle       : int  37 38 37 37 39 41 42 45 41 43 ...
+##  $ Rear.seat.room    : num  26.5 30 28 31 27 28 30.5 30.5 26.5 35 ...
+##  $ Luggage.room      : int  11 15 14 17 13 16 17 21 14 18 ...
+##  $ Weight            : int  2705 3560 3375 3405 3640 2880 3470 4105 3495 3620 ...
+##  $ Origin            : Factor w/ 2 levels &quot;USA&quot;,&quot;non-USA&quot;: 2 2 2 2 2 1 1 1 1 1 ...
+##  $ Make              : Factor w/ 93 levels &quot;Acura Integra&quot;,..: 1 2 4 3 5 6 7 9 8 10 ...</code></pre>
+<pre class="r"><code>usa &lt;- subset(Cars93$Price, Cars93$Origin == &quot;USA&quot;); mean(usa); sd(usa); length(usa)</code></pre>
+<pre><code>## [1] 18.57292</code></pre>
+<pre><code>## [1] 7.816914</code></pre>
+<pre><code>## [1] 48</code></pre>
+<pre class="r"><code>nusa &lt;- subset(Cars93$Price, Cars93$Origin == &quot;non-USA&quot;); mean(nusa); sd(nusa); length(nusa)</code></pre>
+<pre><code>## [1] 20.50889</code></pre>
+<pre><code>## [1] 11.30675</code></pre>
+<pre><code>## [1] 45</code></pre>
+<pre class="r"><code>t.test(Cars93$Price ~ Cars93$Origin, mu=0, var.equal=T)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  Cars93$Price by Cars93$Origin
+## t = -0.96555, df = 91, p-value = 0.3368
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -5.918765  2.046820
+## sample estimates:
+##     mean in group USA mean in group non-USA 
+##              18.57292              20.50889</code></pre>
+<pre class="r"><code>print(paste(&quot;Cars93 데이터셋에서 생산국(Origin)이 USA vs. non-USA 2개의 group에 대해서&quot;,
+            &quot;차 가격(Price)의 평균의 차이가 있는 지를&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 USA 48개, non-USA 45개를 측정한 결과, USA의 Price는&quot;,
+            format(mean(usa), digits=4), &quot;+-&quot;, format(sd(usa), digits=4), &quot;non-USA의 Price는&quot;,
+            format(mean(nusa), digits=4), &quot;+-&quot;, format(sd(nusa), digits=4), &quot;으로 나타났습니다.&quot;,
+            &quot;이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 -0.9656(p-value=0.3368)으로 나타나&quot;,
+            &quot;생산국(Origin: USA / non-USA)에 따른 차 가격(Price)의 차이가 없다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;Cars93 데이터셋에서 생산국(Origin)이 USA vs. non-USA 2개의 group에 대해서 차 가격(Price)의 평균의 차이가 있는 지를 알아보기 위해 표본 추출을 통해 USA 48개, non-USA 45개를 측정한 결과, USA의 Price는 18.57 +- 7.817 non-USA의 Price는 20.51 +- 11.31 으로 나타났습니다. 이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 -0.9656(p-value=0.3368)으로 나타나 생산국(Origin: USA / non-USA)에 따른 차 가격(Price)의 차이가 없다고 판단됩니다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+<div id="mpg----." class="section level4">
+<h4>3. mpg 데이터셋에서 다음을 검정해 보시오.</h4>
 <p><br></p>
 </div>
+<div id="subcompact--midsize---" class="section level4">
+<h4>1) subcompact 자동차와 midsize 자동차의 고속도로 연비</h4>
+<p><br></p>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Registered S3 methods overwritten by &#39;ggplot2&#39;:
+##   method         from 
+##   [.quosures     rlang
+##   c.quosures     rlang
+##   print.quosures rlang</code></pre>
+<pre class="r"><code>head(mpg)</code></pre>
+<pre><code>## # A tibble: 6 x 11
+##   manufacturer model displ  year   cyl trans  drv     cty   hwy fl    class
+##   &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+## 1 audi         a4      1.8  1999     4 auto(~ f        18    29 p     comp~
+## 2 audi         a4      1.8  1999     4 manua~ f        21    29 p     comp~
+## 3 audi         a4      2    2008     4 manua~ f        20    31 p     comp~
+## 4 audi         a4      2    2008     4 auto(~ f        21    30 p     comp~
+## 5 audi         a4      2.8  1999     6 auto(~ f        16    26 p     comp~
+## 6 audi         a4      2.8  1999     6 manua~ f        18    26 p     comp~</code></pre>
+<pre class="r"><code>str(mpg)</code></pre>
+<pre><code>## Classes &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;:    234 obs. of  11 variables:
+##  $ manufacturer: chr  &quot;audi&quot; &quot;audi&quot; &quot;audi&quot; &quot;audi&quot; ...
+##  $ model       : chr  &quot;a4&quot; &quot;a4&quot; &quot;a4&quot; &quot;a4&quot; ...
+##  $ displ       : num  1.8 1.8 2 2 2.8 2.8 3.1 1.8 1.8 2 ...
+##  $ year        : int  1999 1999 2008 2008 1999 1999 2008 1999 1999 2008 ...
+##  $ cyl         : int  4 4 4 4 6 6 6 4 4 4 ...
+##  $ trans       : chr  &quot;auto(l5)&quot; &quot;manual(m5)&quot; &quot;manual(m6)&quot; &quot;auto(av)&quot; ...
+##  $ drv         : chr  &quot;f&quot; &quot;f&quot; &quot;f&quot; &quot;f&quot; ...
+##  $ cty         : int  18 21 20 21 16 18 18 18 16 20 ...
+##  $ hwy         : int  29 29 31 30 26 26 27 26 25 28 ...
+##  $ fl          : chr  &quot;p&quot; &quot;p&quot; &quot;p&quot; &quot;p&quot; ...
+##  $ class       : chr  &quot;compact&quot; &quot;compact&quot; &quot;compact&quot; &quot;compact&quot; ...</code></pre>
+<pre class="r"><code>submpg1 &lt;- subset(mpg, mpg$class == &quot;subcompact&quot; | mpg$class == &quot;midsize&quot;)
+scom &lt;- subset(submpg1$hwy, submpg1$class == &quot;subcompact&quot;); mean(scom); sd(scom); length(scom)</code></pre>
+<pre><code>## [1] 28.14286</code></pre>
+<pre><code>## [1] 5.375012</code></pre>
+<pre><code>## [1] 35</code></pre>
+<pre class="r"><code>mids &lt;- subset(submpg1$hwy, submpg1$class == &quot;midsize&quot;); mean(mids); sd(mids); length(mids)</code></pre>
+<pre><code>## [1] 27.29268</code></pre>
+<pre><code>## [1] 2.13593</code></pre>
+<pre><code>## [1] 41</code></pre>
+<pre class="r"><code>t.test(submpg1$hwy ~ submpg1$class, mu=0, var.equal=T)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  submpg1$hwy by submpg1$class
+## t = -0.93116, df = 74, p-value = 0.3548
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -2.6694291  0.9690806
+## sample estimates:
+##    mean in group midsize mean in group subcompact 
+##                 27.29268                 28.14286</code></pre>
+<pre class="r"><code>print(paste(&quot;mpg 데이터셋에서 class subcompact vs. midsize 2개의 group에 대해서&quot;,
+            &quot;hwy(고속도로 연비)의 평균의 차이가 있는 지를&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 subcompact 35개, midsize 41개를 측정한 결과, subcompact의 hwy는&quot;,
+            format(mean(scom), digits=4), &quot;+-&quot;, format(sd(scom), digits=4), &quot;midsize의 hwy는&quot;, 
+            format(mean(mids), digits=4), &quot;+-&quot;, format(sd(mids), digits=4), &quot;으로 나타났습니다.&quot;,
+            &quot;이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 -0.9311(p-value=0.3548)으로 나타나&quot;,
+            &quot;class(subcompact vs midsize)에 따른 hwy(고속도로 연비)의 차이가 없다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;mpg 데이터셋에서 class subcompact vs. midsize 2개의 group에 대해서 hwy(고속도로 연비)의 평균의 차이가 있는 지를 알아보기 위해 표본 추출을 통해 subcompact 35개, midsize 41개를 측정한 결과, subcompact의 hwy는 28.14 +- 5.375 midsize의 hwy는 27.29 +- 2.136 으로 나타났습니다. 이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 -0.9311(p-value=0.3548)으로 나타나 class(subcompact vs midsize)에 따른 hwy(고속도로 연비)의 차이가 없다고 판단됩니다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+<div id="r--p--" class="section level4">
+<h4>2) 일반 휘발유(r)와 고급 휘발유(p)의 도시 연비</h4>
+<p><br></p>
+<pre class="r"><code>submpg2 &lt;- subset(mpg, mpg$fl == &quot;r&quot; | mpg$fl == &quot;p&quot;)
+r &lt;- subset(submpg2$cty, submpg2$fl == &quot;r&quot;); mean(r); sd(r); length(r)</code></pre>
+<pre><code>## [1] 16.7381</code></pre>
+<pre><code>## [1] 3.88801</code></pre>
+<pre><code>## [1] 168</code></pre>
+<pre class="r"><code>p &lt;- subset(submpg2$cty, submpg2$fl == &quot;p&quot;); mean(p); sd(p); length(p)</code></pre>
+<pre><code>## [1] 17.36538</code></pre>
+<pre><code>## [1] 3.042373</code></pre>
+<pre><code>## [1] 52</code></pre>
+<pre class="r"><code>t.test(submpg2$cty ~ submpg2$fl, mu=0, var.equal=T)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  submpg2$cty by submpg2$fl
+## t = 1.0662, df = 218, p-value = 0.2875
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.5322946  1.7868733
+## sample estimates:
+## mean in group p mean in group r 
+##        17.36538        16.73810</code></pre>
+<pre class="r"><code>print(paste(&quot;mpg 데이터셋에서 fl(일반 휘발유(r) vs. 고급 휘발유(p)) 2개의 group에 대해서&quot;,
+            &quot;cty(도시 연비)의 평균의 차이가 있는 지를&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 일반 휘발유(r) 168개, 고급 휘발유(p) 52개를 측정한 결과, 일반 휘발유(r)의 cty는&quot;,
+            format(mean(r), digits=4), &quot;+-&quot;, format(sd(r), digits=4), &quot;고급 휘발유(p)의 cty는&quot;, 
+            format(mean(p), digits=4), &quot;+-&quot;, format(sd(p), digits=4), &quot;으로 나타났습니다.&quot;,
+            &quot;이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 1.0662(p-value=0.2875)으로 나타나&quot;,
+            &quot;fl(일반 휘발유(r) vs. 고급 휘발유(p))에 따른 cty(도시 연비)의 차이가 없다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;mpg 데이터셋에서 fl(일반 휘발유(r) vs. 고급 휘발유(p)) 2개의 group에 대해서 cty(도시 연비)의 평균의 차이가 있는 지를 알아보기 위해 표본 추출을 통해 일반 휘발유(r) 168개, 고급 휘발유(p) 52개를 측정한 결과, 일반 휘발유(r)의 cty는 16.74 +- 3.888 고급 휘발유(p)의 cty는 17.37 +- 3.042 으로 나타났습니다. 이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 1.0662(p-value=0.2875)으로 나타나 fl(일반 휘발유(r) vs. 고급 휘발유(p))에 따른 cty(도시 연비)의 차이가 없다고 판단됩니다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+<div id="subcompact--f-r---" class="section level4">
+<h4>3) subcompact 자동차의 전륜구동(f)이냐 후륜구동(r)이냐에 따른 도시 연비</h4>
+<p><br></p>
+<pre class="r"><code>submpg3 &lt;- subset(mpg, mpg$drv == &quot;f&quot; | mpg$drv == &quot;r&quot;)
+submpg4 &lt;- subset(submpg3, submpg3$class == &quot;subcompact&quot;)
+f &lt;- subset(submpg4$cty, submpg4$drv == &quot;f&quot;); mean(f); sd(f); length(f)</code></pre>
+<pre><code>## [1] 22.36364</code></pre>
+<pre><code>## [1] 4.520277</code></pre>
+<pre><code>## [1] 22</code></pre>
+<pre class="r"><code>r &lt;- subset(submpg4$cty, submpg4$drv == &quot;r&quot;); mean(r); sd(r); length(r)</code></pre>
+<pre><code>## [1] 15.88889</code></pre>
+<pre><code>## [1] 1.452966</code></pre>
+<pre><code>## [1] 9</code></pre>
+<pre class="r"><code>t.test(submpg4$cty ~ submpg4$drv, mu=0, var.equal=T)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  submpg4$cty by submpg4$drv
+## t = 4.1727, df = 29, p-value = 0.0002498
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  3.301171 9.648324
+## sample estimates:
+## mean in group f mean in group r 
+##        22.36364        15.88889</code></pre>
+<pre class="r"><code>print(paste(&quot;mpg 데이터셋에서 drv(전륜구동(f) vs 후륜구동(r)) 2개의 group에 대해서&quot;,
+            &quot;cty(도시 연비)의 평균의 차이가 있는 지를&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 전륜구동(f) 22개, 후륜구동(r) 9개를 측정한 결과, 전륜구동(f)의 cty는&quot;,
+            format(mean(f), digits=4), &quot;+-&quot;, format(sd(f), digits=4), &quot;후륜구동(r)의 cty는&quot;, 
+            format(mean(r), digits=4), &quot;+-&quot;, format(sd(r), digits=4), &quot;으로 나타났습니다.&quot;,
+            &quot;이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 4.1727(p-value=0.0002)으로 나타나&quot;,
+            &quot;fl(일반 휘발유(r) vs. 고급 휘발유(p))에 따른 cty(도시 연비)의 차이가 있다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;mpg 데이터셋에서 drv(전륜구동(f) vs 후륜구동(r)) 2개의 group에 대해서 cty(도시 연비)의 평균의 차이가 있는 지를 알아보기 위해 표본 추출을 통해 전륜구동(f) 22개, 후륜구동(r) 9개를 측정한 결과, 전륜구동(f)의 cty는 22.36 +- 4.52 후륜구동(r)의 cty는 15.89 +- 1.453 으로 나타났습니다. 이를 유의수준 0.05에서 검정하면 검정통계량과 유의확률이 4.1727(p-value=0.0002)으로 나타나 fl(일반 휘발유(r) vs. 고급 휘발유(p))에 따른 cty(도시 연비)의 차이가 있다고 판단됩니다.&quot;</code></pre>
+<p><br><br><br></p>
+</div>
+</div>
+<div id="paired-sample-t-test" class="section level3">
+<h3>Paired Sample T test</h3>
+<p><br><br></p>
+<div id="placebo----xi-new-medicine--1----yi-------5-." class="section level4">
+<h4>1. 새로운 당뇨병 치료제를 개발한 제약사에서는 치료에 지대한 영향을 주는 외부요인을 통제하기 위해 10명의 당뇨병 환자를 선별하여 1달 동안 ’위약(placebo)’을 투여한 기간의 혈당 수치(Xi)와 ’신약(new medicine)’을 투여한 1달 기간 동안의 혈당 수치(Yi)를 측정하여 짝을 이루어 혈당 차이를 유의수준 5%에서 비교하시오.</h4>
+<p><br></p>
+<pre class="r"><code>library(PairedData)</code></pre>
+<pre><code>## Loading required package: gld</code></pre>
+<pre><code>## Loading required package: mvtnorm</code></pre>
+<pre><code>## Loading required package: lattice</code></pre>
+<pre><code>## 
+## Attaching package: &#39;PairedData&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     summary</code></pre>
+<pre class="r"><code>placebo &lt;- c(51.4, 52.0, 45.5, 54.5, 52.3, 50.9, 52.7, 50.3, 53.8, 53.1)
+new_medicine &lt;- c(50.1, 51.5, 45.9, 53.1, 51.8, 50.3, 52.0, 49.9, 52.5, 53.0)
+difference &lt;- placebo - new_medicine
+difference; mean(difference); sd(difference); length(difference)</code></pre>
+<pre><code>##  [1]  1.3  0.5 -0.4  1.4  0.5  0.6  0.7  0.4  1.3  0.1</code></pre>
+<pre><code>## [1] 0.64</code></pre>
+<pre><code>## [1] 0.5699903</code></pre>
+<pre><code>## [1] 10</code></pre>
+<pre class="r"><code>t.test(placebo, new_medicine, paired=T)</code></pre>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  placebo and new_medicine
+## t = 3.5507, df = 9, p-value = 0.006209
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  0.2322535 1.0477465
+## sample estimates:
+## mean of the differences 
+##                    0.64</code></pre>
+<pre class="r"><code>print(paste(&quot;위약(placebo)과 신약(new medicine)을 투여한 1달 기간 동안의 혈당수치의 차이가 있는지를&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 10명을 대상으로 측정한 결과 평균&quot;,
+            format(mean(difference), digits=4), &quot;증가하였으며 표준편차는&quot;, format(sd(difference), digits=4),
+            &quot;로 나타났습니다. 또한 유의수준 0.05에서 검정통계량과 유의확률이 3.5507(p-value=0.006)으로 나타나&quot;,
+            &quot;위약과 신약의 혈당수치 효과는 차이가 있다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;위약(placebo)과 신약(new medicine)을 투여한 1달 기간 동안의 혈당수치의 차이가 있는지를 알아보기 위해 표본 추출을 통해 10명을 대상으로 측정한 결과 평균 0.64 증가하였으며 표준편차는 0.57 로 나타났습니다. 또한 유의수준 0.05에서 검정통계량과 유의확률이 3.5507(p-value=0.006)으로 나타나 위약과 신약의 혈당수치 효과는 차이가 있다고 판단됩니다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+<div id="a-------b-----------10--------------------." class="section level4">
+<h4>2. 두 종류의 신발 밑창의 원재료가 닳는 정도가 차이가 있는지를 검정하기 위해서 10명의 소년에게 한쪽은 A라는 원재료로 만든 신발을 신기고, 다른 한쪽은 B라는 원재료로 만든 신발을 신긴 후에, 일정 기간이 지난후에 신발을 수거하여 10명의 각 소년의 왼쪽 신발 밑창의 닳은 정도와 오른쪽 신발 밑창의 닳은 정도의 차이를 비교하여 두 종류 원재료의 재질이 다른지를 검정하시오.</h4>
+<p><br></p>
+<pre class="r"><code>materialA &lt;- c(13.2, 8.2, 10.9, 14.3, 10.7, 6.6, 9.5, 10.8, 8.8, 13.3)
+materialB &lt;- c(14.0, 8.8, 11.2, 14.2, 11.8, 6.4, 9.8, 11.3, 9.3, 13.6)
+diff &lt;- materialA - materialB; mean(diff); sd(diff); length(diff)</code></pre>
+<pre><code>## [1] -0.41</code></pre>
+<pre><code>## [1] 0.3871549</code></pre>
+<pre><code>## [1] 10</code></pre>
+<pre class="r"><code>t.test(materialA, materialB, paired=T)</code></pre>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  materialA and materialB
+## t = -3.3489, df = 9, p-value = 0.008539
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.6869539 -0.1330461
+## sample estimates:
+## mean of the differences 
+##                   -0.41</code></pre>
+<pre class="r"><code>print(paste(&quot;A 원료(materialA)와 B 원료(materialB)의 밑창이 닳는 정도의 차이를&quot;,
+            &quot;알아보기 위해 표본 추출을 통해 10명을 대상으로 측정한 결과 평균&quot;,
+            format(mean(diff), digits=4), &quot;증가하였으며 표준편차는&quot;, format(sd(diff), digits=4),
+            &quot;로 나타났습니다. 또한 유의수준 0.05에서 검정통계량과 유의확률이 -3.3489(p-value=0.008)으로 나타나&quot;,
+            &quot;A 원료와 B 원료의 밑창이 닳는 정도는 차이가 있다고 판단됩니다.&quot;))</code></pre>
+<pre><code>## [1] &quot;A 원료(materialA)와 B 원료(materialB)의 밑창이 닳는 정도의 차이를 알아보기 위해 표본 추출을 통해 10명을 대상으로 측정한 결과 평균 -0.41 증가하였으며 표준편차는 0.3872 로 나타났습니다. 또한 유의수준 0.05에서 검정통계량과 유의확률이 -3.3489(p-value=0.008)으로 나타나 A 원료와 B 원료의 밑창이 닳는 정도는 차이가 있다고 판단됩니다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+</div>
+</div>
+<div id="chapter-08.-practice" class="section level2">
+<h2>Chapter 08. Practice</h2>
+<p><br><br></p>
+<div id="one-way-anova-" class="section level3">
+<h3>One way ANOVA(일원 분산분석)</h3>
+<p><br></p>
+<div id="m--ppm--.-3------" class="section level4">
+<h4>1. 다음은 3개 호수의 산소량의 차이가 있는지 없는지 알아보기 위하여 각 호수에서 10곳을 선택하여 수심 1m의 물로부터 산소량(ppm)을 측정한 자료이다. 3개 호수의 산소량이 같다고 할 수 있는가?</h4>
+<p><br></p>
+<pre class="r"><code>library(reshape2)
+o.w1 &lt;- data.frame(v1 = c(5, 7, 6, 8, 6, 7, 8, 8, 6, 10),
+                   v2 = c(6, 8, 9, 11, 13, 12, 10, 8, 9, 10),
+                   v3 = c(14, 25, 26, 18, 19, 22, 21, 16, 20, 30))
+r_o.w1 &lt;- melt(o.w1, variable.name=&quot;호수&quot;, value.name=&quot;산소량&quot;)</code></pre>
+<pre><code>## No id variables; using all as measure variables</code></pre>
+<pre class="r"><code>result1 &lt;- oneway.test(산소량~호수, data=r_o.w1, var.equal=T)
+names(result1)</code></pre>
+<pre><code>## [1] &quot;statistic&quot; &quot;parameter&quot; &quot;p.value&quot;   &quot;method&quot;    &quot;data.name&quot;</code></pre>
+<pre class="r"><code>result1$statistic</code></pre>
+<pre><code>##        F 
+## 56.12416</code></pre>
+<pre class="r"><code>print(paste(&quot;One way ANOVA test 결과 검정통계량 F =&quot;, format(result1$statistic, digits=4), 
+            &quot;, p-value =&quot;, format(result1$p.value, digits=4), &quot;이므로 유의수준 0.05보다 작아&quot;,
+            &quot;3개 호수의 산소량에 차이가 있다고 볼 수 있다.&quot;))</code></pre>
+<pre><code>## [1] &quot;One way ANOVA test 결과 검정통계량 F = 56.12 , p-value = 2.411e-10 이므로 유의수준 0.05보다 작아 3개 호수의 산소량에 차이가 있다고 볼 수 있다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+<div id="section" class="section level4">
+<h4>2. 다음은 3개 채소에 대한 도매시장 7곳의 가격이다. 3개 채소의 가격이 같다고 할 수 있는가?</h4>
+<p><br></p>
+<pre class="r"><code>o.w2 &lt;- data.frame(v1 = c(15.5, 14.3, 16.3, 13.5, 15.7, 16.4, 14.7),
+                   v2 = c(14.7, 16.3, 15.5, 15.2, 16.3, 13.5, 15.4),
+                   v3 = c(15.5, 13.2, 16.5, 15.7, 15.3, 15.2, 14.8))  
+r_o.w2 &lt;- melt(o.w2, variable.name=&quot;채소&quot;, value.name=&quot;가격&quot;)</code></pre>
+<pre><code>## No id variables; using all as measure variables</code></pre>
+<pre class="r"><code>result2 &lt;- oneway.test(가격~채소, data=r_o.w2, var.equal=T)
+result2</code></pre>
+<pre><code>## 
+##  One-way analysis of means
+## 
+## data:  가격 and 채소
+## F = 0.017792, num df = 2, denom df = 18, p-value = 0.9824</code></pre>
+<pre class="r"><code>print(paste(&quot;One way ANOVA test 결과 검정통계량 F =&quot;, format(result2$statistic, digits=4), 
+            &quot;, p-value =&quot;, format(result2$p.value, digits=4), &quot;이므로 유의수준 0.05보다 크므로&quot;,
+            &quot;3개 채소의 가격이 같다고 할 수 있다.&quot;))</code></pre>
+<pre><code>## [1] &quot;One way ANOVA test 결과 검정통계량 F = 0.01779 , p-value = 0.9824 이므로 유의수준 0.05보다 크므로 3개 채소의 가격이 같다고 할 수 있다.&quot;</code></pre>
+<p><br><br></p>
+</div>
+</div>
+<div id="section-1" class="section level3">
+<h3>적합도 / 독립성 검정</h3>
+<p><br></p>
 <div id="section-2" class="section level4">
-<h4>980, 1008, 968, 1032, 1012, 996, 1021, 1002, 996, 1017</h4>
+<h4>1. 어느 공정의 부적합품률은 15% 이다. 시료 80개를 추출하여 검사한 결과 불량이 16개이다. 유의수준 5%로 적합도 검정을 하시오.</h4>
 <p><br></p>
 </div>
 <div id="section-3" class="section level4">
-<h4>샘플이 모집단과 같다고 할 수 있는가?</h4>
+<h4>적합도 검정</h4>
 <p><br></p>
-<pre class="r"><code>mu &lt;- 1000
-x &lt;- c(980, 1008, 968, 1032, 1012, 996, 1021, 1002, 996, 1017)
-t.test(x, mu=mu)</code></pre>
+<pre class="r"><code>pdata &lt;- c(15, 85)
+sdata &lt;- c(16, 64)
+
+result3 &lt;- chisq.test(sdata, p=pdata/100)
+result3</code></pre>
 <pre><code>## 
-##  One Sample t-test
+##  Chi-squared test for given probabilities
 ## 
-## data:  x
-## t = 0.53, df = 9, p-value = 0.6
-## alternative hypothesis: true mean is not equal to 1000
-## 95 percent confidence interval:
-##   989.5 1016.9
-## sample estimates:
-## mean of x 
-##      1003</code></pre>
-<pre class="r"><code>print(&quot;Answer : p-value = 0.6 으로 alpha = 0.05 보다 크므로 샘플이 모집단과 같다고 할 수 있다.&quot;)</code></pre>
-<pre><code>## [1] &quot;Answer : p-value = 0.6 으로 alpha = 0.05 보다 크므로 샘플이 모집단과 같다고 할 수 있다.&quot;</code></pre>
+## data:  sdata
+## X-squared = 1.5686, df = 1, p-value = 0.2104</code></pre>
+<pre class="r"><code>print(paste(&quot;chi-squre 적합도 test 결과 검정통계량 X-squared =&quot;, format(result3$statistic, digits=4), 
+            &quot;, p-value =&quot;, format(result3$p.value, digits=4), &quot;이므로 유의수준 0.05보다 크므로&quot;,
+            &quot;시료 80개의 부적합품률은 15%를 만족한다고 할 수 있다.&quot;))</code></pre>
+<pre><code>## [1] &quot;chi-squre 적합도 test 결과 검정통계량 X-squared = 1.569 , p-value = 0.2104 이므로 유의수준 0.05보다 크므로 시료 80개의 부적합품률은 15%를 만족한다고 할 수 있다.&quot;</code></pre>
 <p><br><br></p>
 </div>
 <div id="section-4" class="section level4">
-<h4>2. 어떤 반의 학생들의 수학 평균성적은 55점이었다. 0교시 수업을 시행하고 나서 학생들의 시험 성적은 다음과 같다.</h4>
+<h4>2. 다음은 음주량과 흡연량 데이터이다. 이 표로부터 음주량과 흡연량 사이에 연관이 있는지 확인하시오.</h4>
 <p><br></p>
 </div>
 <div id="section-5" class="section level4">
-<h4>58, 49, 39, 99, 32, 88, 62, 30, 55, 65, 44, 55, 57, 53, 88, 42, 39</h4>
+<h4>독립성 검정</h4>
 <p><br></p>
-</div>
-<div id="section-6" class="section level4">
-<h4>0교시 수업을 시행한 후, 학생들의 성적은 올랐다고 할 수 있는가?</h4>
-<p><br></p>
-<pre class="r"><code>mu &lt;- 55
-x &lt;- c(58, 49, 39, 99, 32, 88, 62, 30, 55, 65, 44, 55, 57, 53, 88, 42, 39)
-t.test(x, mu=mu, alternative = &quot;greater&quot;)</code></pre>
-<pre><code>## 
-##  One Sample t-test
-## 
-## data:  x
-## t = 0.25, df = 16, p-value = 0.4
-## alternative hypothesis: true mean is greater than 55
-## 95 percent confidence interval:
-##  47.81   Inf
-## sample estimates:
-## mean of x 
-##     56.18</code></pre>
-<pre class="r"><code>print(&quot;Answer : p-value = 0.4 으로 alpha = 0.05 보다 크므로 성적이 올랐다고 할 수 없다.&quot;)</code></pre>
-<pre><code>## [1] &quot;Answer : p-value = 0.4 으로 alpha = 0.05 보다 크므로 성적이 올랐다고 할 수 없다.&quot;</code></pre>
-<p><br><br></p>
-</div>
-<div id="g-.-2008------." class="section level4">
-<h4>3. 2006년 조사에 의하면 한국인의 1인 1일 평균 알코올 섭취량이 8.1g 이다. 2008년 무작위로 뽑은 알코올 섭취량은 다음과 같다.</h4>
-<p><br></p>
-</div>
-<div id="section-7" class="section level4">
-<h4>15.50, 11.21, 12.67, 8.87, 12.15, 9.88, 2.06, 14.50, 0, 4.97</h4>
-<p><br></p>
-</div>
-<div id="section-8" class="section level4">
-<h4>평균 알코올 섭취량이 달라졌다고 할 수 있는가?</h4>
-<p><br></p>
-<pre class="r"><code>mu &lt;- 8.1
-x &lt;- c(15.50, 11.21, 12.67, 8.87, 12.15, 9.88, 2.06, 14.50, 0, 4.97)
-t.test(x, mu=mu)</code></pre>
-<pre><code>## 
-##  One Sample t-test
-## 
-## data:  x
-## t = 0.65, df = 9, p-value = 0.5
-## alternative hypothesis: true mean is not equal to 8.1
-## 95 percent confidence interval:
-##   5.436 12.926
-## sample estimates:
-## mean of x 
-##     9.181</code></pre>
-<pre class="r"><code>print(&quot;Answer : p-value = 0.5 으로 alpha = 0.05 보다 크므로 섭취량이 달라졌다고 할 수 없다.&quot;)</code></pre>
-<pre><code>## [1] &quot;Answer : p-value = 0.5 으로 alpha = 0.05 보다 크므로 섭취량이 달라졌다고 할 수 없다.&quot;</code></pre>
+<pre class="r"><code>df &lt;- data.frame(&quot;1갑이상&quot; = c(23, 31, 13),
+                    &quot;1갑이하&quot; = c(21, 48, 23),
+                    &quot;안피움&quot; = c(63, 159, 119))
+colnames(df) &lt;- c(&quot;1갑이상&quot;, &quot;1갑이하&quot;, &quot;안피움&quot;)
+rownames(df) &lt;- c(&quot;반병이상&quot;, &quot;반병이하&quot;, &quot;못마심&quot;)
+df</code></pre>
+<pre><code>##          1갑이상 1갑이하 안피움
+## 반병이상      23      21     63
+## 반병이하      31      48    159
+## 못마심        13      23    119</code></pre>
+<pre class="r"><code>result4 &lt;- chisq.test(df)
+
+print(paste(&quot;chi-squre 독립성 test 결과 검정통계량 X-squared =&quot;, format(result4$statistic, digits=4), 
+            &quot;, p-value =&quot;, format(result4$p.value, digits=4), &quot;이므로 유의수준 0.05보다 작으므로&quot;,
+            &quot;음주량과 흡연량 사이에 연관이 있다고 말할 수 있다.&quot;))</code></pre>
+<pre><code>## [1] &quot;chi-squre 독립성 test 결과 검정통계량 X-squared = 12.83 , p-value = 0.01215 이므로 유의수준 0.05보다 작으므로 음주량과 흡연량 사이에 연관이 있다고 말할 수 있다.&quot;</code></pre>
 <p><br><br></p>
 </div>
 </div>
