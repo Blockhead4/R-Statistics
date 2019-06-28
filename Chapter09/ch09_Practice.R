@@ -1,0 +1,92 @@
+# Chapter 09. Practice
+
+# 회귀 분석
+
+# 1. 부모의 키가 클수록 자식의 키도 상대적으로 크다고 하는데, 아버지의 키와 아들의 키를
+# 조사하였더니 아래와 같이 나왔다고 한다. 이 자료를 바탕으로 해서 회귀식을 구하고
+# 아버지의 키가 165cm일 때 아들의 키는 얼마인지 예측하시오.
+#     아버지의 키(x):	150  160  170  180  190
+#     아들의 키(y):	176  179  182  181  185
+height.f <- c(150, 160, 170, 180, 190)
+height.s <- c(176, 179, 182, 181, 185)
+height <- data.frame(father = height.f, son= height.s)
+fit <- lm(son ~ father, data=height)
+
+print(paste("회귀분석 결과 상수항과 회귀계수는 각각 (", format(fit$coefficients[1], digits=4),
+            ",", format(fit$coefficients[2], digits=4), ") 이므로 아버지의 키가 165일때 아들의 키는", 
+            165*fit$coefficients[2]+fit$coefficients[1], "이다."))
+
+# 2. 소득이 높을수록 신용카드 사용량이 많아진다고 하는데, 월 소득 대비 신용카드 사용량을
+# 조사하였더니 아래와 같이 나왔다고 한다. 이 자료를 바탕으로 해서 회귀식을 구하고,
+# 월 소득이 250만원일 때 신용카드 사용량을 예측하시오. (단위: 만원)
+# 월 소득(x):	100  200  300  400  500
+# 카드 사용량(y):	 30    70    85  140  197
+x <- c(100, 200, 300, 400, 500)
+y <- c(30, 70, 85, 140, 197)
+xy <- data.frame(월소득 = x, 카드사용량= y)
+fit2 <- lm(카드사용량 ~ 월소득, data=xy)
+
+print(paste("회귀분석 결과 상수항과 회귀계수는 각각 (", format(fit2$coefficients[1], digits=4),
+            ",", format(fit2$coefficients[2], digits=4), ") 이므로 월 소득이 250만원일 때 신용카드 사용량은", 
+            250*fit2$coefficients[2]+fit2$coefficients[1], "이다."))
+
+
+# 3. mtcars 데이터셋에서 배기량(disp)에 따른 마력(hp)의 회귀식을 구하시오.
+fit3 <- lm(mtcars$hp ~ mtcars$disp, data=mtcars)
+
+print(paste("배기량(disp)에 따른 마력(hp)의 회귀식은",
+            "[ 마력(hp) = ", format(fit2$coefficients[2], digits=4), "* 배기량(disp) +",
+            format(fit2$coefficients[1], digits=4), "] 이다."))
+
+# 4. MASS 패키지를 설치하고, 이 패키지 안에 있는 Boston 데이터셋을 이용하여
+# Boston 인근의 집값을 결정하는 다중회귀 모델을 만드시오.
+library(MASS)
+str(Boston)
+head(Boston)
+names(Boston)
+library(leaps)
+subsets <- regsubsets(medv ~ ., data=Boston,
+                      method='seqrep', nbest=4)
+subsets <- regsubsets(medv ~ ., data=Boston,
+                      method='exhaustive', nbest=4)
+
+plot(subsets)
+fit <- lm(medv ~ zn + chas + nox + rm + dis + ptratio + black + lstat, data=Boston)
+summary(fit)
+
+
+b <- summary(subsets)
+c <- b$outmat; c
+
+store <- c()
+for(i in 1:length(c)) {
+  store <- c(store, c[nrow(c), i])
+}
+c[nrow(c)-3,]
+
+View(c)
+f <- rownames(c)
+f <- strsplit(f, "")
+f <- str_remove_all(f, " ")
+f <- unlist(f)
+f
+library(stringr)
+
+
+colnames(c)
+store
+store1 <- colnames(c)
+store1 <- rbind(store1, store)
+c[nrow(c), 9]
+
+store2 <- c()
+for(i in 1:length(store1[1,])) {
+  if(store1[2, i] == "*" & i != length(store1[1,])) {
+    store2 <- paste(store2, store1[1, i], "+", sep="")
+  } else if(store1[2, i] == "*") {
+    store2 <- paste(store2, store1[1, i],  sep="")
+  }
+}
+store2
+
+length(store1[1,])
