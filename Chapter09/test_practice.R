@@ -41,20 +41,50 @@ print(paste("배기량(disp)에 따른 마력(hp)의 회귀식은",
 # 4. MASS 패키지를 설치하고, 이 패키지 안에 있는 Boston 데이터셋을 이용하여
 # Boston 인근의 집값을 결정하는 다중회귀 모델을 만드시오.
 library(MASS)
+library(stringr)
+library(leaps)
 str(Boston)
 head(Boston)
 names(Boston)
-library(leaps)
+
+
+Autolm <- function(data, Y){
+  
+  
+  subsets <- regsubsets(medv ~ ., data=Boston,
+                        method='seqrep', nbest=4)
+  subsets <- regsubsets(medv ~ ., data=Boston,
+                        method='exhaustive', nbest=4)
+  
+  case <- summary(subsets)$outmat; case
+  rown <- rownames(case); rown
+  num1 <- str_sub(rownames(case), 1, 1); num1
+  num2 <- str_sub(rownames(case), 6, 6); num2
+  choice <- case[f[num1 == max(num1) & num2 == 1],] == "*"; 
+  df_c <- as.data.frame(choice); df_c
+  df_c <- subset(df_c, df_c$choice == T)
+  row_df_c <- rownames(df_c); row_df_c
+  tmp <- c()
+  
+  for (i in 1:length(row_df_c)) {
+    ifelse(i < length(row_df_c), tmp <- paste(tmp, row_df_c[i], "+", sep=""), tmp <- paste(tmp, row_df_c[i], sep=""))
+  }
+  tmp
+  
+  form <- paste(Y, "~", tmp)
+  result <- lm(formula = form, data= Boston)
+  
+  return(summary(result))
+
+}
+
+Boston$medv
+
 subsets <- regsubsets(medv ~ ., data=Boston,
                       method='seqrep', nbest=4)
 subsets <- regsubsets(medv ~ ., data=Boston,
                       method='exhaustive', nbest=4)
 
-plot(subsets)
-fit <- lm(medv ~ zn + chas + nox + rm + dis + ptratio + black + lstat, data=Boston)
-summary(fit)
-
-library(stringr)
 case <- summary(subsets)$outmat; case
 rown <- rownames(case); rown
 num1 <- str_sub(rownames(case), 1, 1); num1
@@ -64,11 +94,11 @@ df_c <- as.data.frame(choice); df_c
 df_c <- subset(df_c, df_c$choice == T)
 row_df_c <- rownames(df_c); row_df_c
 tmp <- c()
+
 for (i in 1:length(row_df_c)) {
   ifelse(i < length(row_df_c), tmp <- paste(tmp, row_df_c[i], "+", sep=""), tmp <- paste(tmp, row_df_c[i], sep=""))
 }
 tmp
 
-lm(medv ~ tmp, data=Boston)
-a <- "zn + chas + nox + rm + dis + ptratio + black + lstat"
-fit2 <- lm(medv ~ get(a), data=Boston)
+form <- paste(Y, "~", tmp)
+result <- lm(formula = form, data= Boston)
