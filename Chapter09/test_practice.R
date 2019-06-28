@@ -42,63 +42,42 @@ print(paste("배기량(disp)에 따른 마력(hp)의 회귀식은",
 # Boston 인근의 집값을 결정하는 다중회귀 모델을 만드시오.
 library(MASS)
 library(stringr)
+install.packages("leaps")
 library(leaps)
 str(Boston)
 head(Boston)
 names(Boston)
 
-
-Autolm <- function(data, Y){
+Autolm <- function(data, dvar) {
   
+  coln <- length(colnames(data) == dvar)
+  y <- data[, coln]
   
-  subsets <- regsubsets(medv ~ ., data=Boston,
+  subsets <- regsubsets(y ~ ., data = data[-coln],
                         method='seqrep', nbest=4)
-  subsets <- regsubsets(medv ~ ., data=Boston,
+  subsets <- regsubsets(y ~ ., data = data[-coln],
                         method='exhaustive', nbest=4)
   
-  case <- summary(subsets)$outmat; case
-  rown <- rownames(case); rown
-  num1 <- str_sub(rownames(case), 1, 1); num1
-  num2 <- str_sub(rownames(case), 6, 6); num2
-  choice <- case[f[num1 == max(num1) & num2 == 1],] == "*"; 
-  df_c <- as.data.frame(choice); df_c
+  case <- summary(subsets)$outmat
+  rown <- rownames(case)
+  num1 <- str_sub(rown, 1, 1)
+  num2 <- str_sub(rown, 6, 6)
+  choice <- case[rown[num1 == max(num1) & num2 == 1], ] == "*"
+  df_c <- as.data.frame(choice)
   df_c <- subset(df_c, df_c$choice == T)
-  row_df_c <- rownames(df_c); row_df_c
-  tmp <- c()
-  
+  row_df_c <- rownames(df_c)
+  form <- paste(dvar, "~")
   for (i in 1:length(row_df_c)) {
-    ifelse(i < length(row_df_c), tmp <- paste(tmp, row_df_c[i], "+", sep=""), tmp <- paste(tmp, row_df_c[i], sep=""))
+    ifelse(i < length(row_df_c), form <- paste(form, row_df_c[i], "+"), form <- paste(form, row_df_c[i]))
   }
-  tmp
   
-  form <- paste(Y, "~", tmp)
-  result <- lm(formula = form, data= Boston)
+  result <- lm(formula = form, data = data)
   
   return(summary(result))
 
 }
 
-Boston$medv
+Autolm(Boston, "medv")
 
-subsets <- regsubsets(medv ~ ., data=Boston,
-                      method='seqrep', nbest=4)
-subsets <- regsubsets(medv ~ ., data=Boston,
-                      method='exhaustive', nbest=4)
 
-case <- summary(subsets)$outmat; case
-rown <- rownames(case); rown
-num1 <- str_sub(rownames(case), 1, 1); num1
-num2 <- str_sub(rownames(case), 6, 6); num2
-choice <- case[f[num1 == max(num1) & num2 == 1],] == "*"; 
-df_c <- as.data.frame(choice); df_c
-df_c <- subset(df_c, df_c$choice == T)
-row_df_c <- rownames(df_c); row_df_c
-tmp <- c()
 
-for (i in 1:length(row_df_c)) {
-  ifelse(i < length(row_df_c), tmp <- paste(tmp, row_df_c[i], "+", sep=""), tmp <- paste(tmp, row_df_c[i], sep=""))
-}
-tmp
-
-form <- paste(Y, "~", tmp)
-result <- lm(formula = form, data= Boston)
