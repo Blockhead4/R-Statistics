@@ -1,4 +1,4 @@
-# 다중회귀모형 적합 함수 프로그램 [ auto_lm( data, "dependent var") ]
+# 다중회귀모형 적합 함수 프로그램 만들기 
 
 # 4. MASS 패키지를 설치하고, 이 패키지 안에 있는 Boston 데이터셋을 이용하여
 # Boston 인근의 집값을 결정하는 다중회귀 모델을 만드시오.
@@ -7,6 +7,7 @@ library(MASS)
 library(stringr)
 
 # 다중회귀모형 적합 함수
+# auto_lm( data, "dependent var" )
 auto_lm <- function(data, dvar) {
   
   coln <- length(colnames(data) == dvar)
@@ -31,7 +32,6 @@ auto_lm <- function(data, dvar) {
   }
   
   result <- lm(formula = form, data = data)
-  
   return(result)
 
 }
@@ -42,3 +42,5 @@ model_B <- autolm(Boston, "medv")
 model_B
 summary(model_B)
 plot(model_B)
+
+
