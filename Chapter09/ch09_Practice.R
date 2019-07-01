@@ -33,10 +33,11 @@ print(paste("회귀분석 결과 상수항과 회귀계수는 각각 (", format(
 
 # 3. mtcars 데이터셋에서 배기량(disp)에 따른 마력(hp)의 회귀식을 구하시오.
 fit3 <- lm(mtcars$hp ~ mtcars$disp, data=mtcars)
+fit3
 
 print(paste("배기량(disp)에 따른 마력(hp)의 회귀식은",
-            "[ 마력(hp) = ", format(fit2$coefficients[2], digits=4), "* 배기량(disp) +",
-            format(fit2$coefficients[1], digits=4), "] 이다."))
+            "[ 마력(hp) = ", format(fit3$coefficients[2], digits=4), "* 배기량(disp) +",
+            format(fit3$coefficients[1], digits=4), "] 이다."))
 
 # 4. MASS 패키지를 설치하고, 이 패키지 안에 있는 Boston 데이터셋을 이용하여
 # Boston 인근의 집값을 결정하는 다중회귀 모델을 만드시오.
